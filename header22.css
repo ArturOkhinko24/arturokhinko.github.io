@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: Michroma, serif;
+  background: linear-gradient(90deg, #fa00ff 0%, #000000 95%);
+}
+
+p {
+  color: #fa00ff;
+}
+
+.col-animation {
+  animation: call 2s ease 0s infinite normal forwards;
+  margin-bottom: 1rem;
+}
+
+.nav-item .nav-link.active {
+  color: rgb(201, 88, 246);
+}
+
+.navbar-brand > img {
+  width: 49px;
+}
+
+.navbar-toggler {
+  color: rgb(201, 88, 246);
+}
+.row .site-bar {
+  color: #ff00fb;
+}
+
+.line {
+  border-style: solid;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #fa00ff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: linear-gradient(136deg, #fa00ff 34%, #000000 90%);
+  border-style: none;
+  color: white;
+}
+.footer-text {
+  color: rgb(106, 106, 106);
+  margin: auto auto;
+}
+
+footer {
+  background: linear-gradient(270deg, #fa00ff 0%, #000000 95%);
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes call {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@media (max-width: 992px) {
+  #random-text {
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    margin-left: -1.5rem;
+    margin-right: -0.75rem;
+  }
+}
